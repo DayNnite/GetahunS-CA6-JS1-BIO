@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Sam G" />
+  <title>Bear Ninja Hunter</title>
+    
+</head>
+<body>
+  <h1>Bear Ninja Hunter</h1>
+  
+  <p id="playerLine"></p>
+  <p id="computerLine"></p>
+
+
+  <script>
+  const computerChoice = 'Bear';
+  let playerName = prompt("Welcome to Bear Hunter Ninja! Please enter your name to get started:");
+  alert(`Hi ${playerName} Let's Play!!`);
+  let playerChoice = prompt("Who are you: Bear, Ninja, or Hunter?");
+
+  let playerMessage   = `${playerName}, You picked ${playerChoice}!`;
+  let computerMessage = `The computer picked ${computerChoice}!`;
+
+  document.getElementById("playerLine").innerHTML   = playerMessage;
+  document.getElementById("computerLine").innerHTML = computerMessage;
+
+  console.log(playerMessage);
+  console.log(computerMessage);
+
+</script>
+
+</body>
+</html>
